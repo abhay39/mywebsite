@@ -42,7 +42,7 @@ const HeroSection = ({item}) => {
   return (
     <div className='flex  items-center flex-col  justify-center mt-10 md:mt-0'>
       <div className=' flex flex-col items-center'>
-        <span className='text-2xl  opacity-70'>I'm a</span>
+        <span className='text-2xl  opacity-70'>I&apos;m a</span>
         <br />
         <p className="text-red-500 text-3xl md:text-8xl w-full  font-bold" id={styles.prof}>{profession}</p>
         <br />
