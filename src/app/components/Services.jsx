@@ -40,7 +40,7 @@ const Services = () => {
             {
                 datas.map((item,index)=>{
                     return(
-                        <div className=' flex flex-col border-[6px] w-full md:w-2/6 border-orange-900 p-3 rounded-md shadow-lg shadow-orange-500  cursor-pointer'>
+                        <div key={index} className=' flex flex-col border-[6px] w-full md:w-2/6 border-orange-900 p-3 rounded-md shadow-lg shadow-orange-500  cursor-pointer'>
                             <div className='flex items-center gap-6'>
                                 <div className='p-2 rounded-full bg-slate-200 cursor-pointer'>
                                     {item.icon}
