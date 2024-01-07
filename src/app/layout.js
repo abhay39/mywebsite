@@ -2,6 +2,7 @@ import { Inter, Poppins } from 'next/font/google'
 import './globals.css'
 import Header from './components/Header'
 import ThemeContextMain from './hooks'
+import Head from 'next/head'
 
 const inter = Poppins({ subsets: ['latin'],weight:['300','400','500','600','700','800','900'] })
 
@@ -13,7 +14,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      
+      <body>
         <ThemeContextMain>
           <div className=''>
             {children}
@@ -21,5 +23,5 @@ export default function RootLayout({ children }) {
         </ThemeContextMain>
       </body>
     </html>
-  )
+  );
 }
